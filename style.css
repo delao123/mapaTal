@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.talent-map {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background: #e0e0e0;
+}
+
+tfoot {
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+td img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+td span {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.dominant {
+  background-color: #00b894;
+  color: white;
+  font-weight: bold;
+}
+
+.less-dominant {
+  background-color: #b2bec3;
+  color: white;
+  font-weight: bold;
+}
+
+.team-dominant {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legend p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.dominant-color {
+  width: 20px;
+  height: 20px;
+  background: #00b894;
+  border-radius: 50%;
+}
+
+.less-dominant-color {
+  width: 20px;
+  height: 20px;
+  background: #b2bec3;
+  border-radius: 50%;
+}
+
+.team-dominant-color {
+  width: 20px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+}
