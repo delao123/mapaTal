@@ -81,6 +81,19 @@ td span {
   width: 20px;
   height: 20px;
   line-height: 20px;
+
+  position: relative;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+  }
 }
 
 .legend {
