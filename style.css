@@ -44,8 +44,6 @@ th,
 td {
   padding: 10px;
   text-align: center;
-  padding: 8px;
-  text-align: center;
   overflow: hidden;
 }
 
@@ -134,11 +132,20 @@ td span {
   border-radius: 50%;
 }
 
+/* Estilos para fijar la columna */
 td:first-child,
 th:first-child {
   width: 200px;
   text-align: left;
   padding: 10px;
+  position: sticky;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+thead th:first-child {
+  z-index: 3;
 }
 
 thead tr {
@@ -150,6 +157,12 @@ thead th:not(:first-child) {
   transform: rotate(180deg);
   text-align: start;
 }
+
 th {
   font-weight: lighter;
+}
+
+td:not(:first-child) {
+  text-align: center;
+  padding: 0;
 }
