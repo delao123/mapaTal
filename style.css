@@ -5,12 +5,14 @@ body {
 }
 
 .talent-map {
-  max-width: 1200px;
   margin: 0 auto;
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -22,8 +24,10 @@ h1 {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
   margin-bottom: 20px;
+  table-layout: fixed;
+  border-spacing: 5px 10px;
 }
 
 thead {
@@ -31,14 +35,17 @@ thead {
 }
 
 tfoot {
-  background: #f4f4f4;
-  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  border: 1px solid gray;
 }
 
 th, td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  overflow: hidden;
 }
 
 td img {
@@ -57,13 +64,11 @@ td span {
 .dominant {
   background-color: #00b894;
   color: white;
-  font-weight: bold;
 }
 
 .less-dominant {
   background-color: #b2bec3;
   color: white;
-  font-weight: bold;
 }
 
 .team-dominant {
@@ -110,4 +115,23 @@ td span {
   height: 20px;
   background: orange;
   border-radius: 50%;
+}
+
+td:first-child, th:first-child {
+  width: 200px; 
+  text-align: left; 
+  padding: 10px; 
+}
+
+thead tr{
+  background-color: white;
+}
+
+thead th:not(:first-child) {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: start;
+}
+th{
+  font-weight: lighter;
 }
